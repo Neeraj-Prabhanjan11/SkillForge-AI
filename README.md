@@ -7,20 +7,10 @@ A responsive, dependency-free career and skills dashboard with a guided AI Mento
 Serve this folder with Python:
 
 ```powershell
-py -m http.server 8000
+https://github.com/Neeraj-Prabhanjan11/SkillForge-AI/blob/neeraj-prabhanjan11-skillforge-ai-ui/README.md
 ```
 
-Then open [http://localhost:8000](http://localhost:8000). No install or build step is required.
-
-## Publish on Google Firebase Hosting
-
-1. Create a project in the [Firebase Console](https://console.firebase.google.com/) and make sure Firebase Hosting is enabled.
-2. Install the Firebase CLI with `npm install -g firebase-tools`, then sign in with `firebase login`.
-3. From this repository folder, run `firebase use --add` and select your Firebase project.
-4. Publish the site with `firebase deploy --only hosting`. Firebase prints the public website URL when deployment finishes.
-
-The repository includes `firebase.json` configured to publish the static site from its root; no build step is required. The selected project is saved in `.firebaserc` locally by the Firebase CLI.
-
+Then open(https://github.com/Neeraj-Prabhanjan11/SkillForge-AI/blob/neeraj-prabhanjan11-skillforge-ai-ui/README.md). No install or build step is required.
 ## Features
 
 - Vertical navigation for the dashboard, user profile, skill analysis, career matches, learning recommendations, progress, AI Mentor, and settings.
