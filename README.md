@@ -7,10 +7,10 @@ A responsive, dependency-free career and skills dashboard with a guided AI Mento
 Serve this folder with Python:
 
 ```powershell
-https://github.com/Neeraj-Prabhanjan11/SkillForge-AI/blob/neeraj-prabhanjan11-skillforge-ai-ui/README.md
+https://neeraj-prabhanjan11.github.io/SkillForge-AI/
 ```
 
-Then open(https://github.com/Neeraj-Prabhanjan11/SkillForge-AI/blob/neeraj-prabhanjan11-skillforge-ai-ui/README.md). No install or build step is required.
+Then open (https://neeraj-prabhanjan11.github.io/SkillForge-AI/) No install or build step is required.
 ## Features
 
 - Vertical navigation for the dashboard, user profile, skill analysis, career matches, learning recommendations, progress, AI Mentor, and settings.
