@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7fb">
+    <meta name="description" content="SkillBridge AI — your personalized path to a career you love.">
+    <title>SkillBridge AI — Your career, in progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" data-view-link="dashboard" aria-label="SkillBridge AI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.5 8l4.25 10.1 2.4-5.7L25 23.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.3" cy="8.7" r="2.1" fill="currentColor"/></svg>
+          </span>
+          <span>skillbridge<span class="brand-ai">.ai</span></span>
+        </a>
+
+        <div class="nav-caption">WORKSPACE</div>
+        <nav class="primary-nav" aria-label="Workspace">
+          <button class="nav-item active" type="button" data-view="dashboard">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="4" rx="1.5"/><rect x="13.5" y="10.5" width="7" height="10" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+            <span>Overview</span>
+          </button>
+          <button class="nav-item" type="button" data-view="profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.1 3.2-5 7-5s6.5 1.9 7 5"/></svg>
+            <span>User Profile</span>
+          </button>
+          <button class="nav-item" type="button" data-view="skills">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M8 16v-4m4 4V8m4 8v-6m4 6V5"/></svg>
+            <span>Skill Analysis</span>
+          </button>
+          <button class="nav-item" type="button" data-view="careers">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7m-13 5h18m-11-1v2h4v-2"/></svg>
+            <span>Career Matching</span>
+          </button>
+          <button class="nav-item" type="button" data-view="learning">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Zm0 0V19m4-12h8m-8 4h6"/></svg>
+            <span>Learning Recommendations</span>
+          </button>
+          <button class="nav-item" type="button" data-view="progress">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16"/><path d="m7 15 4-4 3 2 5-6"/></svg>
+            <span>Progress Tracking</span>
+          </button>
+          <button class="nav-item" type="button" data-view="mentor">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 14.2 9l5.8 2-5.8 2.1L12 19l-2.2-5.9L4 11l5.8-2L12 3.5Z"/><path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"/></svg>
+            <span>AI Mentor</span>
+            <span class="nav-new">NEW</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <button class="nav-item" type="button" data-view="settings">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.3 1-1.4 2.4-1.6-.6a7.7 7.7 0 0 1-1.6.9l-.3 1.7h-2.8l-.3-1.7a7.7 7.7 0 0 1-1.6-.9l-1.6.6-1.4-2.4 1.3-1a7.5 7.5 0 0 1 0-1.9l-1.3-1 1.4-2.4 1.6.6a7.7 7.7 0 0 1 1.6-.9l.3-1.7h2.8l.3 1.7a7.7 7.7 0 0 1 1.6.9l1.6-.6 1.4 2.4-1.3 1a7.5 7.5 0 0 1-.1 1.8Z"/></svg>
+            <span>Settings</span>
+          </button>
+          <div class="sidebar-profile">
+            <div class="avatar avatar-small">JD</div>
+            <div class="sidebar-profile-copy"><strong id="sidebar-profile-name">Jordan Davis</strong><span>Free plan</span></div>
+            <button class="icon-button sidebar-more" type="button" aria-label="Open profile" data-view="profile">···</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="mobile-backdrop" id="mobile-backdrop"></div>
+      <main class="main-panel">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button mobile-menu" type="button" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+            <div class="breadcrumbs"><span>Workspace</span><span class="crumb-slash">/</span><strong id="current-page">Overview</strong></div>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button top-notification" type="button" aria-label="Notification preferences" data-view="settings">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg>
+              <span class="notification-dot"></span>
+            </button>
+            <button class="top-avatar" type="button" data-view="profile" aria-label="Open user profile">JD</button>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="view active" id="view-dashboard" data-page-title="Overview">
+            <div class="welcome-row">
+              <div>
+                <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAREER, IN PROGRESS</p>
+                <h1>Good morning, <span id="greeting-name">Jordan</span> <span class="wave">✦</span></h1>
+                <p class="page-subtitle">A little progress today goes a long way. Here's your career snapshot.</p>
+              </div>
+              <button class="button button-primary" type="button" data-view="mentor">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.3 6.7L21 12l-6.7 2.3L12 21l-2.3-6.7L3 12l6.7-2.3L12 3Z"/></svg>
+                Ask your AI mentor
+              </button>
+            </div>
+
+            <div class="stats-grid">
+              <article class="stat-card">
+                <div class="stat-top"><span class="stat-label">SKILL READINESS</span><span class="stat-icon lavender">↗</span></div>
+                <div class="stat-value"><span id="readiness-value">68</span><span class="stat-unit">%</span></div>
+                <div class="stat-foot"><span class="trend">↑ 8%</span> <span>vs. last month</span></div>
+                <div class="mini-progress"><span style="width:68%"></span></div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top"><span class="stat-label">CAREER MATCHES</span><span class="stat-icon mint">◎</span></div>
+                <div class="stat-value">3</div>
+                <div class="stat-foot"><span class="trend">Goal-based</span></div>
+                <div class="stat-bottom-note"><span class="tiny-avatars"><i>FS</i><i>FE</i><i>BE</i></span><span>matched to your profile</span></div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top"><span class="stat-label">LEARNING STREAK</span><span class="stat-icon peach">✦</span></div>
+                <div class="stat-value">7 <span class="streak-unit">days</span></div>
+                <div class="stat-foot"><span class="trend">Personal best!</span></div>
+                <div class="streak-days" aria-label="Learning activity this week"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i></div>
+              </article>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="panel skill-panel">
+                <div class="panel-heading">
+                  <div><p class="eyebrow eyebrow-muted">YOUR SKILL ANALYSIS</p><h2>Skills that move you forward</h2></div>
+                  <button class="text-button" type="button" data-view="skills">View all <span aria-hidden="true">→</span></button>
+                </div>
+                <div class="skill-list" id="dashboard-skills"></div>
+                <div class="skill-insight" id="skill-insight"><span class="insight-spark">✦</span><p></p></div>
+              </article>
+
+              <article class="panel career-panel">
+                <div class="panel-heading">
+                  <div><p class="eyebrow eyebrow-muted">TOP CAREER MATCH</p><h2 id="top-career-title">Full Stack Developer</h2></div>
+                  <span class="match-score" id="top-career-score">68% match</span>
+                </div>
+                <p class="career-description" id="top-career-description">Your Python and SQL foundations are a strong start. Build JavaScript, React, and Node.js next.</p>
+                <div class="career-meta" id="top-career-meta"><span><i class="meta-icon">↗</i> High demand</span><span><i class="meta-icon">$</i> $85k–$130k</span></div>
+                <div class="match-divider"></div>
+                <div class="match-footer">
+                  <div class="match-avatars" id="match-avatars"><span>FS</span><span>FE</span><span>BE</span></div>
+                  <span class="match-caption" id="match-caption">0 skills aligned</span>
+                  <button class="round-arrow" type="button" data-view="careers" aria-label="Explore career matches">→</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="dashboard-grid lower-grid">
+              <article class="panel learning-panel">
+                <div class="panel-heading">
+                  <div><p class="eyebrow eyebrow-muted">YOUR NEXT STEP</p><h2>Made for your goals</h2></div>
+                  <button class="text-button" type="button" data-view="learning">See learning path <span aria-hidden="true">→</span></button>
+                </div>
+                <div class="course-card" id="dashboard-course"></div>
+              </article>
+              <article class="panel mentor-preview">
+                <div class="mentor-preview-top"><div class="mentor-badge"><span>✦</span></div><span class="online-status"><i></i> HERE FOR YOU</span></div>
+                <p class="eyebrow eyebrow-muted">A NOTE FROM YOUR MENTOR</p>
+                <p class="mentor-quote" id="dashboard-mentor-note">“You’re closer than you think. Let’s turn your curiosity into a project that gets noticed.”</p>
+                <button class="text-button mentor-link" type="button" data-view="mentor">Let’s work on it <span aria-hidden="true">→</span></button>
+              </article>
+            </div>
+
+            <section class="panel agent-team" aria-labelledby="agent-team-title">
+              <div class="panel-heading"><div><p class="eyebrow eyebrow-muted">AGENT COLLABORATION</p><h2 id="agent-team-title">Your specialist team is working together</h2></div><span class="agent-team-badge"><i></i> 4 agents active</span></div>
+              <div class="agent-grid" id="agent-grid"></div>
+            </section>
+          </section>
+
+          <section class="view" id="view-profile" data-page-title="User Profile">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> YOUR FOUNDATION</p><h1>Your profile</h1><p class="page-subtitle">The more your mentor knows, the more personal your path becomes.</p></div><button class="button button-secondary" type="button" id="edit-profile">Edit profile</button></div>
+            <div class="profile-layout">
+              <article class="panel profile-card">
+                <div class="profile-hero"><div class="avatar avatar-large">JD</div><div><h2 id="profile-name">Jordan Davis</h2><p id="profile-role">Student · Learning online</p><span class="profile-badge">Exploring what’s next</span></div></div>
+                <div class="profile-details"><div><span>EXPERIENCE</span><strong>Early career</strong></div><div><span>INDUSTRY</span><strong>Technology</strong></div><div><span>CAREER GOAL</span><strong id="profile-career-goal">Full Stack Developer</strong></div><div><span>LEARNING STYLE</span><strong>Hands-on projects</strong></div></div>
+                <div class="profile-about"><h3>About me</h3><p id="profile-about-text">I have a foundation in Python, SQL, and HTML. I’m building the skills to create complete web applications from front end to back end.</p></div>
+                <div class="profile-interests"><h3>Current skills</h3><div class="chip-list" id="profile-skills"></div></div>
+                <div class="profile-assets"><div><h3>Certifications</h3><p id="profile-certifications">Add certifications to strengthen your profile.</p></div><div><h3>Projects</h3><p id="profile-projects">Add projects to show what you can build.</p></div></div>
+              </article>
+              <article class="panel profile-completion"><p class="eyebrow eyebrow-muted">PROFILE STRENGTH</p><div class="completion-score">82<span>%</span></div><p>A strong profile helps us find opportunities that feel like <em>you</em>.</p><div class="completion-progress"><span></span></div>              <div class="completion-check"><span>✓</span> Career goals added</div><div class="completion-check"><span>✓</span> Skills assessed</div><div class="completion-check incomplete" id="portfolio-status"><span>○</span> Add a portfolio link</div><button class="button button-outline" type="button" id="portfolio-action">Add portfolio link <span>→</span></button></article>
+            </div>
+          </section>
+
+          <section class="view" id="view-skills" data-page-title="Skill Analysis">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> KNOW YOUR STRENGTHS</p><h1>Your skill analysis</h1><p class="page-subtitle">A clear view of where you shine—and where to grow next.</p></div><span class="updated-label">Updated today</span></div>
+            <article class="panel readiness-panel"><div class="readiness-copy"><p class="eyebrow eyebrow-muted">OVERALL CAREER READINESS</p><div class="readiness-number"><span id="skills-readiness">42</span><small>/ 100</small></div><p id="readiness-description">Your foundation is forming. Focus on the missing skills that matter most for your goal.</p></div><div class="readiness-ring" aria-label="Career readiness"><svg viewBox="0 0 140 140"><circle class="ring-track" cx="70" cy="70" r="57"/><circle class="ring-progress" cx="70" cy="70" r="57"/></svg><div><strong id="readiness-ring-value">42%</strong><span>READY</span></div></div><div class="readiness-next"><span class="next-star">✦</span><strong>Adaptive assessment</strong><p>Questions get harder as you progress and change every session.</p><button class="button button-primary assessment-start" type="button" data-start-assessment>Start assessment <span aria-hidden="true">→</span></button></div></article>
+            <div class="section-title-row"><div><h2>Your skills</h2><p>Strengths and gaps mapped to your career goal</p></div><button class="button button-secondary assessment-start" type="button" data-start-assessment>Take a levelled assessment</button></div>
+            <div class="skills-detail-grid" id="skills-detail-grid"></div>
+          </section>
+
+          <section class="view" id="view-careers" data-page-title="Career Matching">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> WHERE YOU COULD GO</p><h1>Careers that fit you</h1><p class="page-subtitle">Matched to your strengths, interests, and the way you want to grow.</p></div><button class="button button-secondary" type="button" data-view="profile">Refine my profile</button></div>
+            <div class="career-filter-row"><span><strong>3 roles</strong> matched to your profile</span><div class="filter-pills"><button class="filter-pill selected" type="button" data-career-filter="all">Best fit</button><button class="filter-pill" type="button" data-career-filter="growth">Growth potential</button></div></div>
+            <div class="career-list" id="career-results"></div>
+          </section>
+
+          <section class="view" id="view-learning" data-page-title="Learning Recommendations">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> YOUR PERSONAL LEARNING PATH</p><h1>Small steps, real momentum</h1><p class="page-subtitle">A focused path to build the skills your next role is looking for.</p></div><span class="path-duration">✦ &nbsp; 6-week learning path</span></div>
+            <article class="panel learning-path-banner"><div><span class="path-label">YOUR NEXT MILESTONE</span><h2>Make your ideas tangible</h2><p>Build confidence in prototyping with a practical, portfolio-ready project.</p><button class="button button-light" type="button" data-view="mentor">Ask your mentor for a plan <span>→</span></button></div><div class="banner-art" aria-hidden="true"><span class="art-circle"></span><span class="art-square"></span><span class="art-line"></span><span class="art-spark">✦</span></div></article>
+            <div class="section-title-row"><div><h2>Recommended for you</h2><p>Chosen to close your skill gaps and fit your schedule</p></div><span class="duration-note">About 2 hours / week</span></div>
+            <div class="recommendation-list" id="recommendation-list"></div>
+          </section>
+
+          <section class="view" id="view-progress" data-page-title="Progress Tracking">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> LOOK HOW FAR YOU’VE COME</p><h1>Your progress</h1><p class="page-subtitle">Every skill you practice is a step closer to your next chapter.</p></div><span class="streak-chip">✦ &nbsp; 7-day streak</span></div>
+            <div class="progress-stat-grid"><article class="panel progress-stat"><span class="stat-label">LEARNING TIME</span><strong>12.5 <small>hrs</small></strong><span class="progress-stat-foot">↑ 2.5 hrs from last month</span></article><article class="panel progress-stat"><span class="stat-label">SKILLS IMPROVED</span><strong id="improved-count">3</strong><span class="progress-stat-foot">You’re building real momentum</span></article><article class="panel progress-stat"><span class="stat-label">PATH COMPLETION</span><strong id="path-completion">25<small>%</small></strong><span class="progress-stat-foot">2 of 8 milestones completed</span></article></div>
+            <article class="panel activity-panel"><div class="panel-heading"><div><p class="eyebrow eyebrow-muted">YOUR JOURNEY</p><h2>A month of meaningful progress</h2></div><span class="activity-period">LAST 4 WEEKS⌄</span></div><div class="chart-area"><div class="chart-y-labels"><span>4h</span><span>3h</span><span>2h</span><span>1h</span><span>0</span></div><div class="chart-main"><div class="chart-grid-lines"><i></i><i></i><i></i><i></i><i></i></div><div class="chart-bars"><div class="chart-week"><span class="chart-bar bar-one" style="--height:42%"></span><span class="chart-bar bar-two" style="--height:64%"></span><span class="chart-bar bar-three" style="--height:34%"></span><span class="chart-bar bar-four" style="--height:78%"></span><span class="chart-bar bar-five" style="--height:53%"></span><span class="chart-bar bar-six" style="--height:88%"></span><span class="chart-bar bar-seven" style="--height:65%"></span><label>Week 1</label></div><div class="chart-week"><span class="chart-bar bar-one" style="--height:35%"></span><span class="chart-bar bar-two" style="--height:58%"></span><span class="chart-bar bar-three" style="--height:76%"></span><span class="chart-bar bar-four" style="--height:47%"></span><span class="chart-bar bar-five" style="--height:89%"></span><span class="chart-bar bar-six" style="--height:63%"></span><span class="chart-bar bar-seven" style="--height:71%"></span><label>Week 2</label></div><div class="chart-week"><span class="chart-bar bar-one" style="--height:56%"></span><span class="chart-bar bar-two" style="--height:38%"></span><span class="chart-bar bar-three" style="--height:84%"></span><span class="chart-bar bar-four" style="--height:67%"></span><span class="chart-bar bar-five" style="--height:49%"></span><span class="chart-bar bar-six" style="--height:92%"></span><span class="chart-bar bar-seven" style="--height:74%"></span><label>Week 3</label></div><div class="chart-week"><span class="chart-bar bar-one" style="--height:64%"></span><span class="chart-bar bar-two" style="--height:48%"></span><span class="chart-bar bar-three" style="--height:91%"></span><span class="chart-bar bar-four" style="--height:71%"></span><span class="chart-bar bar-five" style="--height:58%"></span><span class="chart-bar bar-six" style="--height:100%"></span><span class="chart-bar bar-seven" style="--height:78%"></span><label>This week</label></div></div></div></div><div class="chart-legend"><span><i class="legend-dot"></i>Learning hours</span><span>Most active: Thursday</span></div></article>
+            <section class="assessment-history-panel panel" aria-labelledby="assessment-history-title"><div class="panel-heading"><div><p class="eyebrow eyebrow-muted">LEARN FROM EVERY CHECK-IN</p><h2 id="assessment-history-title">Assessment history</h2></div><button class="text-button" type="button" data-view="skills">Take an assessment →</button></div><p class="assessment-history-intro">Recent scores are saved on this device so you can spot progress by skill and level.</p><div class="assessment-history-list" id="assessment-history-list" aria-live="polite"></div></section>
+            <div class="section-title-row"><div><h2>Your milestones</h2><p>Keep showing up. You’re doing great.</p></div><button class="text-button" type="button" data-view="learning">View learning path →</button></div>
+            <div class="milestone-list"><article class="panel milestone done-milestone"><span class="milestone-check">✓</span><div><h3>Define your career direction</h3><p>Completed Oct 28</p></div><span class="milestone-type">CAREER</span></article><article class="panel milestone done-milestone"><span class="milestone-check">✓</span><div><h3>Complete your skills assessment</h3><p>Completed Nov 02</p></div><span class="milestone-type">SKILLS</span></article><article class="panel milestone"><span class="milestone-number">03</span><div><h3>Finish your first career project</h3><p>Next up · In progress</p></div><button class="text-button" type="button" data-view="learning">Continue →</button></article></div>
+          </section>
+
+          <section class="view" id="view-mentor" data-page-title="AI Mentor">
+            <div class="mentor-page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAREER, WITH A THINKING PARTNER</p><h1>Your AI mentor</h1><p class="page-subtitle">Ask questions, untangle a decision, or make a plan. We’ll figure it out together.</p></div><span class="mentor-available"><i></i> Available now</span></div>
+            <div class="mentor-layout">
+              <section class="panel chat-panel" aria-label="Conversation with your AI mentor">
+                <div class="chat-header"><div class="mentor-badge"><span>✦</span></div><div><strong>Your career companion</strong><span><i></i> Here to help you grow</span></div><button class="icon-button chat-options" id="clear-chat" type="button" aria-label="Start a new conversation">↻</button></div>
+                <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions text">
+                  <div class="message mentor-message"><div class="message-avatar">✦</div>                  <div class="message-content"><span class="message-sender">YOUR AI MENTOR <time>JUST NOW</time></span><div class="message-bubble" id="mentor-welcome"><p>Hey Jordan! Your goal is Full Stack Developer. You already have a start with Python, SQL, and HTML. What would you like to work on today?</p></div></div></div>
+                  <div class="mentor-suggestions" id="mentor-suggestions"><span>Not sure where to start?</span><div><button type="button" class="prompt-chip" data-prompt="How can I build a portfolio project?">Build a portfolio project</button><button type="button" class="prompt-chip" data-prompt="What should I focus on this week?">Plan my week</button><button type="button" class="prompt-chip" data-prompt="How can I prepare for an interview?">Prep for an interview</button></div></div>
+                </div>
+                <form class="chat-composer" id="mentor-form">
+                  <label class="sr-only" for="mentor-input">Message your AI mentor</label>
+                  <textarea id="mentor-input" rows="1" placeholder="Tell me what you're thinking..." maxlength="500" required></textarea>
+                  <div class="composer-footer"><span>Thoughtful guidance, one step at a time.</span><button class="send-button" type="submit" aria-label="Send message" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 16-8-5.5 16-2.8-6.2L4 12Zm7.7 1.8L20 4"/></svg></button></div>
+                </form>
+              </section>
+              <aside class="mentor-side">
+                <article class="panel mentor-focus-card"><p class="eyebrow eyebrow-muted">YOUR FOCUS RIGHT NOW</p><div class="focus-skill-icon">◇</div><h2>Prototyping</h2><p>A skill that can make your product instincts visible to future teams.</p><div class="focus-progress"><div><span>YOUR MOMENTUM</span><strong>41%</strong></div><div class="detail-meter green-meter"><span style="width:41%"></span></div></div><button class="text-button" type="button" data-view="learning">See your learning path →</button></article>
+                <article class="panel mentor-prompt-card"><p class="eyebrow eyebrow-muted">GOOD QUESTIONS TO ASK</p><button type="button" class="suggestion-link" data-prompt="How can I make a portfolio project that shows my skills?">How can I make a portfolio project?</button><button type="button" class="suggestion-link" data-prompt="I feel a little stuck in my career. Can you help me figure out a next step?">I feel stuck. Where do I start?</button><button type="button" class="suggestion-link" data-prompt="What should I focus on this week for my career goal?">What should I focus on this week?</button></article>
+                <div class="mentor-privacy"><span>✧</span><p>Your conversations are a space to think out loud. Your mentor is here to support—not judge.</p></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view" id="view-settings" data-page-title="Settings">
+            <div class="page-heading"><div><p class="eyebrow"><span class="eyebrow-dot"></span> MAKE IT YOURS</p><h1>Settings</h1><p class="page-subtitle">A few little things to make SkillBridge feel like your space.</p></div></div>
+            <div class="settings-layout">
+              <div class="settings-main">
+                <article class="panel settings-card"><div class="settings-section-head"><div class="settings-icon settings-notify">♧</div><div><h2>Notifications</h2><p>Choose the updates you’d like to hear about.</p></div></div>
+                  <div class="setting-row"><div><strong>Learning reminders</strong><p>A gentle nudge to keep your learning streak going.</p></div><label class="switch"><input type="checkbox" data-setting="learningReminders" checked><span class="switch-track"></span><span class="sr-only">Learning reminders</span></label></div>
+                  <div class="setting-row"><div><strong>Career matches</strong><p>Hear when new roles match your skills and goals.</p></div><label class="switch"><input type="checkbox" data-setting="careerMatches" checked><span class="switch-track"></span><span class="sr-only">Career match notifications</span></label></div>
+                  <div class="setting-row"><div><strong>Progress updates</strong><p>Celebrate milestones and see your weekly progress.</p></div><label class="switch"><input type="checkbox" data-setting="progressUpdates"><span class="switch-track"></span><span class="sr-only">Progress update notifications</span></label></div>
+                  <div class="setting-row"><div><strong>AI Mentor tips</strong><p>Occasional ideas from your mentor, tailored to your goals.</p></div><label class="switch"><input type="checkbox" data-setting="mentorTips" checked><span class="switch-track"></span><span class="sr-only">AI Mentor tips</span></label></div>
+                  <div class="settings-saved" id="notification-saved" role="status" aria-live="polite"></div>
+                </article>
+                <article class="panel settings-card appearance-card"><div class="settings-section-head"><div class="settings-icon settings-appearance">☼</div><div><h2>Appearance</h2><p>Pick the look that feels right to you.</p></div></div><div class="theme-options" role="group" aria-label="Choose appearance"><button type="button" class="theme-option" data-theme-choice="light" aria-pressed="true"><span class="theme-preview preview-light"><i></i><i></i><i></i></span><span><strong>Light</strong><small>Clear & bright</small></span><span class="theme-radio"></span></button><button type="button" class="theme-option" data-theme-choice="dark" aria-pressed="false"><span class="theme-preview preview-dark"><i></i><i></i><i></i></span><span><strong>Dark</strong><small>Easy on the eyes</small></span><span class="theme-radio"></span></button></div></article>
+              </div>
+              <aside class="settings-aside"><article class="panel settings-aside-card"><div class="settings-aside-art"><span>✦</span><i></i></div><h3>Good to know</h3><p>Your preferences are saved on this device. You can change them whenever you like.</p><button class="text-button" type="button" data-view="profile">Manage your profile →</button></article><div class="settings-version">SkillBridge AI <span>·</span> Your growth, your way</div></aside>
+            </div>
+          </section>
+        </div>
+      </main>
+      <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-dialog-title">
+        <form id="profile-form">
+          <div class="dialog-heading"><div><p class="eyebrow eyebrow-muted">YOUR FOUNDATION</p><h2 id="profile-dialog-title">Edit your profile</h2></div><button class="icon-button" id="close-profile-dialog" type="button" aria-label="Close dialog">×</button></div>
+          <label for="edit-name">Name</label><input id="edit-name" name="name" maxlength="60" required>
+          <label for="edit-role">Current role and location</label><input id="edit-role" name="role" maxlength="100">
+          <label for="edit-goal">Career goal</label><select id="edit-goal" name="goal"><option>Full Stack Developer</option><option>Product Designer</option></select>
+          <label for="edit-about">About me</label><textarea id="edit-about" name="about" rows="3" maxlength="500"></textarea>
+          <label for="edit-skills">Current skills <span>(comma separated)</span></label><input id="edit-skills" name="skills" maxlength="240" placeholder="Python, SQL, HTML">
+          <label for="edit-certifications">Certifications <span>(comma separated)</span></label><input id="edit-certifications" name="certifications" maxlength="240" placeholder="Course or credential names">
+          <label for="edit-projects">Projects <span>(comma separated)</span></label><input id="edit-projects" name="projects" maxlength="240" placeholder="Project names">
+          <label for="edit-portfolio">Portfolio link <span>(optional)</span></label><input id="edit-portfolio" name="portfolio" type="url" placeholder="https://">
+          <div class="dialog-actions"><button class="button button-secondary" id="cancel-profile-dialog" type="button">Cancel</button><button class="button button-primary" type="submit">Save changes</button></div>
+        </form>
+      </dialog>
+      <dialog class="assessment-dialog" id="assessment-dialog" aria-labelledby="assessment-title">
+        <div class="assessment-shell">
+          <div class="assessment-header"><div><p class="eyebrow eyebrow-muted">PERSONALIZED SKILL CHECK</p><h2 id="assessment-title">Adaptive assessment</h2></div><button class="icon-button" id="close-assessment" type="button" aria-label="Close assessment">×</button></div>
+          <div id="assessment-content" aria-live="polite"></div>
+        </div>
+      </dialog>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
